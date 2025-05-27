@@ -19,6 +19,7 @@ def main():
 		time_passed = time.tick(60)
 		dt = time_passed / 1000
 		screen.fill("black")
+		player_real.update(dt)
 		player_real.draw(screen)
 		pygame.display.flip()
 
